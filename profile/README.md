@@ -36,7 +36,8 @@ kernel tuned for it:
 - `kernel`: `linux-kestrel`, the custom efficiency-tuned kernel.
 - `hyprland`: the lean Hyprland source package Kestrel ships.
 - `quickshell`: the lean Quickshell source package Kestrel ships.
-- `.github`: the organization profile.
+- `packages`: the binary package repository, a pacman `[kestrel]` overlay served
+  over GitHub Pages.
 
 ## Efficiency and speed over everything
 
