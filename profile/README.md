@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="kestrel-mark-512.png" alt="Kestrel" width="160">
+  <img src="https://raw.githubusercontent.com/kestrel-distro/.github/refs/heads/main/profile/kestrel-mark-512.png" alt="Kestrel" width="160">
 </p>
 
 <h1 align="center">Kestrel</h1>
