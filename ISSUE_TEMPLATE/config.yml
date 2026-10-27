@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Manual
+    url: https://github.com/kestrel-distro/kestrel/tree/main/manual
+    about: End-user manual for the desktop, tools and troubleshooting.
+  - name: Maintainer documentation
+    url: https://github.com/kestrel-distro/docs
+    about: Architecture, packaging, publishing and maintenance.
+  - name: Security report
+    url: https://github.com/kestrel-distro/kestrel/security/advisories/new
+    about: Report a vulnerability privately.

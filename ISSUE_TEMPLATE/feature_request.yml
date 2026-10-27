@@ -1,0 +1,41 @@
+name: Feature request
+description: Propose a change or a new capability
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Desktop (Hyprland, Quickshell, themes)
+        - Terminal (foot, fish)
+        - Installer / live image
+        - Kernel / scheduling
+        - Packaging / publishing
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is hard or missing today, and for whom.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: |
+        What you want to happen. If it touches performance, say which metric it
+        should move; Kestrel does not ship changes that do not move a metric.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing commands, packages or config that might already cover it.

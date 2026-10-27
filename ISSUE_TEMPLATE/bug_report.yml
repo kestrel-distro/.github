@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in Kestrel does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Kestrel is early; the most useful reports include
+        the image/kernel, whether it was live or installed, and the log for the
+        failing phase.
+
+  - type: input
+    id: version
+    attributes:
+      label: Kestrel version / image
+      description: ISO name, `kestrel-version`, or the commit you built.
+      placeholder: kestrel-2026.10.26-2140-x86_64.iso
+    validations:
+      required: true
+
+  - type: input
+    id: kernel
+    attributes:
+      label: Kernel
+      description: Output of `uname -r`.
+      placeholder: 7.2.10-1-kestrel
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Live ISO (VM)
+        - Live ISO (hardware)
+        - Installed system (VM)
+        - Installed system (hardware)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, what happened, and exact steps to reproduce.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Installer: `/var/log/kestrel-install.log` and the phase it stopped in.
+        Session: `kestrel-bench` output, `hyprctl` output, or the relevant
+        `~/.config/kestrel/` file. Redact secrets and serials.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and the manual/docs.
+          required: true
+        - label: This is not a security report (those go through private advisories).
+          required: true
